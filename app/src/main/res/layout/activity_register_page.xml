@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".Register_Page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/backer"
+            android:layout_marginLeft="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration"
+            android:layout_marginTop="2dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="557dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="30dp"
+                android:text="Enter Your Full Name"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/strokers"
+                android:hint="Enter Full Name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="20dp"
+                android:text="Enter an Unique userID"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/userID"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/strokers"
+                android:hint="Enter an Unique userID"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="20dp"
+                android:text="Enter Email ID"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/userEmailID"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/strokers"
+                android:hint="Enter Email ID"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="20dp"
+                android:text="Enter Mobile Number"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/userPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/strokers"
+                android:hint="Enter Mobile Number"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="20dp"
+                android:text="Enter Date Of Birth"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/userDateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/strokers"
+                android:hint="Select Date of Birth"
+                android:inputType="date"
+                android:maxLines="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:id="@+id/sex"
+                    android:layout_width="143dp"
+                    android:layout_height="76dp"
+                    android:background="@drawable/strokers">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:hint="Gender">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/gender_Selector"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/strokers"
+                            android:inputType="none" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:id="@+id/blood"
+                    android:layout_width="190dp"
+                    android:layout_height="76dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/strokers">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:hint="Blood Group">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/bloodGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/strokers"
+                            android:inputType="none" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="20dp"
+                android:text="Choose Password"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/strokers"
+                android:hint="Choose Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="20dp"
+                android:text="Confirm The Password"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/strokers"
+                android:hint="Confirm The Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already Have an Account?"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginHere"
+            android:text="Login Here"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</LinearLayout>
